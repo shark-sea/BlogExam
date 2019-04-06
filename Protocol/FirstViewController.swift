@@ -22,7 +22,7 @@ class FirstViewController: UIViewController, DeliveryDataProtocol {
     // MARK: - IBAction
     
     @IBAction func nextButtonAction(_ sender: Any) {
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
         vc.delegate = self // 대리자 설정
         self.present(vc, animated: true, completion: nil)
     }
