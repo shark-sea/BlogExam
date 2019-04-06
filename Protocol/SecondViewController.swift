@@ -22,6 +22,6 @@ class SecondViewController: UIViewController {
     
     @IBAction func preButtonAction(_ sender: Any) {
         delegate?.deliveryData("오늘 하루도 힘내세요!!")
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
